@@ -7,10 +7,11 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
-public class UserInfo {
+public class UserInfo implements Serializable {
     @Id
     @Column
     @GeneratedValue(strategy= GenerationType.IDENTITY)
